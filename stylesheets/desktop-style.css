@@ -8,6 +8,7 @@
     --second-yellow: #F3C61F;
     --main-purple: #514988;
     --main-white: #fff;
+    --main-pink: #E33881;
     --main-font-family: 'Verdana';
 }
 
@@ -28,8 +29,8 @@ header img{
 }
 
 main{
-    display: grid;
-    grid-auto-flow: column;
+    display: flex;
+    grid-auto-flow: row;
     height: 70vh;
 }
 
@@ -37,6 +38,7 @@ main{
     background-color: var(--main-purple);
     text-align: center;
     padding-top: 30px;
+    width: 50vw ;
 }
 
 #left-menu h1{
@@ -55,4 +57,59 @@ main{
     font-size: 28px;
     font-weight: 400;
     color: var(--main-white);
+}
+
+#right-menu{
+    padding-top: 30px;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+}
+
+#right-menu h2{
+    font-weight: 700;
+    font-size: 70px;
+    color: var(--main-purple);
+}
+
+#right-menu p{
+    color: var(--main-pink);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+footer{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+
+#left-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    gap: 15px;
+}
+
+#tickets{
+    display: flex;
+    flex-direction: row;
+}
+
+#text-ticket{
+    font-size: 27px;
+    font-weight: 700;
+    color: var(--second-yellow);
+}
+
+#right-footer{
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
