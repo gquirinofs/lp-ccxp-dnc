@@ -74,6 +74,12 @@ main{
     color: var(--main-purple);
 }
 
+#countDown{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
 #right-menu p{
     color: var(--main-pink);
     font-size: 30px;
@@ -107,9 +113,34 @@ footer{
     color: var(--second-yellow);
 }
 
+.ticket-d:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
 #right-footer{
     width: 50vw;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#right-footer button{
+    margin-top: 4vh;
+    height: 148px;
+    width: 596px;
+    border-radius: 20px;
+    background-color: var(--main-purple);
+    border: 0px;
+    color: var(--main-white);
+    font-size: 42px;
+    font-weight: 700;
+}
+
+#right-footer button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.3s;
+    color: var(--second-yellow);
 }
